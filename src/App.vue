@@ -1,14 +1,17 @@
 <script>
-import HeaderBambey from "./HeaderBambey.vue";
+/*import HeaderBambey from "./HeaderBambey.vue";
 import FooterBambey from "./FooterBambey.vue";
 import Formulaire from "./Formulaire.vue" ;
-import VueTabulaire from "./VueTabulaire.vue" ;
+import VueTabulaire from "./VueTabulaire.vue" ;*/
+import UpApplication from './UpApplication.vue';
+
 export default {
   components: {
-    HeaderBambey,
+   /* HeaderBambey,
     FooterBambey,
     Formulaire,
-    VueTabulaire,
+    VueTabulaire,*/
+    UpApplication,
   }
 }
 </script>
@@ -19,6 +22,7 @@ export default {
  <br/>
  <vue-tabulaire/>
  <footer-bambey/>
+ <UpApplication/>
 </template>
 
 <style scoped></style>
