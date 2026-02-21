@@ -1,11 +1,43 @@
+<!-- <template>
+  <div class="container">
+    <p>Application: {{ informations.name }}</p>
+     <p>Description: {{ informations.description }}</p>
+  <p>Outils utilises: {{ informations.stack }}</p>
+    <p>Status: {{ informations.health }}</p>
+	<p>Version: {{ informations.version }}</p>
+	<p>Build: {{ informations.build }}</p>
+
+  </div>
+</template> -->
 <template>
   <div class="container">
-    <p>{{ informations.name }}</p>
-    <p>{{ informations.health }}</p>
-	<p>{{ informations.version }}</p>
-	<p>{{ informations.build }}</p>
+    <div class="info">
+      <p><strong>{{ informations.name }} :</strong> {{ informations.description }}</p>
+      <p>
+        <strong>Health :</strong>  {{ informations.health }}</p>
+      <p>
+         <strong>Version: </strong>{{ informations.version }}
+          <strong>Build:</strong> {{ informations.build }}</p>
+    </div>
+    
+    <table class="stack">
+      <thead>
+        <tr>Stack utilisés</tr>
+        <tr>
+          <th>Nom</th>
+          <th>Version</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(version, name) in informations.stack" :key="name">
+          <td>{{ name }}</td>
+          <td >{{ version }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
+
 
 <script>
 import axios from 'axios';
