@@ -1,16 +1,16 @@
 <script>
-/*import HeaderBambey from "./HeaderBambey.vue";
+/* import HeaderBambey from "./HeaderBambey.vue";
 import FooterBambey from "./FooterBambey.vue";
 import Formulaire from "./Formulaire.vue" ;
-import VueTabulaire from "./VueTabulaire.vue" ;*/
+import VueTabulaire from "./VueTabulaire.vue" ; */
 import UpApplication from './UpApplication.vue';
 
 export default {
   components: {
-   /* HeaderBambey,
+  /*  HeaderBambey,
     FooterBambey,
     Formulaire,
-    VueTabulaire,*/
+    VueTabulaire, */
     UpApplication,
   }
 }

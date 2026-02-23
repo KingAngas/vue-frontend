@@ -19,7 +19,7 @@
          <strong>Version: </strong>{{ informations.version }}
           <strong>Build:</strong> {{ informations.build }}</p>
     </div>
-    
+
     <table class="stack">
       <thead>
         <tr>Stack utilisés</tr>
@@ -43,7 +43,6 @@
 import axios from 'axios';
 
 export default {
-  name: 'Up',
   data() {
     return {
       informations: {},
